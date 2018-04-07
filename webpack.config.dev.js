@@ -8,7 +8,7 @@ export default {
     entry: [
         'eventsource-polyfill',         //necessary for hot reloading with IE
         'webpack-hot-middleware/client?reload=true',        //reload=true --> note that it reloads the page it hot module reloading fails
-        'src/index'
+        './src/index.js'
     ],
     target: 'web',      //setting it "web" - will make webpack understand it needs to bundle up the code in a way that browser understands
                         // we can set it to "Node" - if we want it to run on node
@@ -34,4 +34,4 @@ export default {
             {test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: 'url?limit=10000&mimetype=image/svg+xml'}
         ]
     }
-}
+};
