@@ -21,7 +21,7 @@ export default {
         contentBase: '/src'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
+        new webpack.HotModuleReplacementPlugin(),  // Will help to update the files and page without full reload
         new webpack.NoErrorsPlugin()        //helps us keep errors from breaking hotreload experience. Shows error msgs in browsers.
     ],
     module: {       //this section tells webpack what file types it should handle.
